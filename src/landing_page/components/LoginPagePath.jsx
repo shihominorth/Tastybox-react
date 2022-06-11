@@ -1,7 +1,7 @@
-import loginPagePath from "../../login_page/login.html";
+// import loginPagePath from "../../login_page/";
 
-const LoginPagePath = () => {
-    return loginPagePath
-};
+// const LoginPagePath = () => {
+//     return loginPagePath
+// };
 
-export default LoginPagePath;
+// export default LoginPagePath;
