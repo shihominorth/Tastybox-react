@@ -1,7 +1,7 @@
-// import loginPagePath from "../../login_page/";
+import loginPagePath from "../../login_page/index.js";
 
-// const LoginPagePath = () => {
-//     return loginPagePath
-// };
+const LoginPagePath = () => {
+    return loginPagePath
+};
 
-// export default LoginPagePath;
+export default LoginPagePath;

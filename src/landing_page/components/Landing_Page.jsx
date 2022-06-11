@@ -3,15 +3,24 @@ import background from "../images/background-img.png";
 import TimelineScreenshot from "./TimelinneScreenshot";
 import IngredientScreenshot from "./IngredientScreenshot";
 import RankingScreenshot from "./RankingScreenshot";
+import { useNavigate } from "react-router-dom";
+
 
 const top_style = { backgroundImage: `url(${background})` };
 
+
 function Landing_Page() {
-    return (
+  
+  const navigate = useNavigate();
+  const login = () => {
+    navigate('/login'); // 画面遷移
+  };
+  
+  return (
       <div>
         <main>
           <div id="top" style={top_style}>
-            <div class="top-text">
+            <div className="top-text">
               <h1>Tastybox</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
@@ -25,17 +34,19 @@ function Landing_Page() {
                 laoreet. Nullam venenatis turpis eros. Mauris egestas luctus
                 finibus. Donec semper varius fermentum.
               </p>
-              <div class="top-buttons">
+              <div className="top-buttons">
                 <button
                   type="button"
-                  class="btn btn-outline-primary btn-lg login-button"
-                  onclick="location.href='../../landing_page.html'"
+                  className="btn btn-outline-primary btn-lg login-button"
+                  onClick={login}
+                //   onClick="location.href='../../login_page/login.html'"
+
                 >
                   Login
                 </button>
                 <button
                   type="button"
-                  class="btn btn-outline-primary btn-lg new-account-button"
+                  className="btn btn-outline-primary btn-lg new-account-button"
                 >
                   Create new account
                 </button>
@@ -43,20 +54,20 @@ function Landing_Page() {
             </div>
           </div>
           <div id="meals">
-            <div class="meals-images">
-              <div class="meals-image">
+            <div className="meals-images">
+              <div className="meals-image">
                 <img
-                  class="meals-main-image"
+                  className="meals-main-image"
                   src="../images/food1.jpg"
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
-                <div class="explanation">
+                <div className="explanation">
                   <img
-                    class="number"
+                    className="number"
                     src="../images/number1.png"
                     alt="number"
-                    srcset=""
+                    srcSet=""
                   />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -66,13 +77,13 @@ function Landing_Page() {
                 </div>
               </div>
   
-              <div class="meals-image">
-                <div class="explanation">
+              <div className="meals-image">
+                <div className="explanation">
                   <img
-                    class="number"
+                    className="number"
                     src="../images/number2.png"
                     alt="number"
-                    srcset=""
+                    srcSet=""
                   />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -81,25 +92,25 @@ function Landing_Page() {
                   </p>
                 </div>
                 <img
-                  class="meals-main-image"
+                  className="meals-main-image"
                   src="../images/food2.jpg"
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
               </div>
-              <div class="meals-image">
+              <div className="meals-image">
                 <img
-                  class="meals-main-image"
+                  className="meals-main-image"
                   src="../images/food3.jpg"
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
-                <div class="explanation">
+                <div className="explanation">
                   <img
-                    class="number"
+                    className="number"
                     src="../images/number3.png"
                     alt="number"
-                    srcset=""
+                    srcSet=""
                   />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -108,13 +119,13 @@ function Landing_Page() {
                   </p>
                 </div>
               </div>
-              <div class="meals-image">
-                <div class="explanation">
+              <div className="meals-image">
+                <div className="explanation">
                   <img
-                    class="number"
+                    className="number"
                     src="../images/number4.png"
                     alt="number"
-                    srcset=""
+                    srcSet=""
                   />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -123,10 +134,10 @@ function Landing_Page() {
                   </p>
                 </div>
                 <img
-                  class="meals-main-image"
+                  className="meals-main-image"
                   src="../images/food4.jpg"
                   alt=""
-                  srcset=""
+                  srcSet=""
                 />
               </div>
             </div>
@@ -134,13 +145,13 @@ function Landing_Page() {
           <div id="container">
             <div id="left"></div>
             <div id="center">
-              <div class="functions-title">
+              <div className="functions-title">
                 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
               </div>
-              <div class="functions">
-                <div class="function">
+              <div className="functions">
+                <div className="function">
                   <h3>Timeline</h3>
-                  <div class="function-content">
+                  <div className="function-content">
                     <TimelineScreenshot />
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -157,9 +168,9 @@ function Landing_Page() {
                     </p>
                   </div>
                 </div>
-                <div class="function">
+                <div className="function">
                   <h3>Recipe with your ingredients</h3>
-                  <div class="function-content">
+                  <div className="function-content">
                   <IngredientScreenshot />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -176,9 +187,9 @@ function Landing_Page() {
                   </p>
                   </div>
                 </div>
-                <div class="function">
+                <div className="function">
                 <h3>Ranking</h3>
-                <div class="function-content">
+                <div className="function-content">
                  <RankingScreenshot />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -199,20 +210,21 @@ function Landing_Page() {
             </div>
             <div id="right"></div>
           </div>
-          <div class="service-start">
-            <div class="service-start-content">
+          <div className="service-start">
+            <div className="service-start-content">
               <h3>Let's begin Tastybox!</h3>
               <br />
               <button
                 type="button"
-                class="btn btn-outline-primary btn-lg login-button"
-                onclick="location.href='home.html'"
+                className="btn btn-outline-primary btn-lg login-button"
+                onClick={login}
+                // onClick="location.href='../../login_page/login.html'"
               >
                 Login
               </button>
               <button
                 type="button"
-                class="btn btn-outline-primary btn-lg new-account-button"
+                className="btn btn-outline-primary btn-lg new-account-button"
               >
                 Create new account
               </button>
@@ -220,7 +232,7 @@ function Landing_Page() {
           </div>
         </main>
         <footer>
-          <div class="copyright">
+          <div className="copyright">
             <p>Copyright&copy;Shihomi Kitajima</p>
           </div>
         </footer>

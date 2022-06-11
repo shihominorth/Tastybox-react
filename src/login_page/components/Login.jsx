@@ -2,16 +2,16 @@ import React from "react";
 
 function Login() {
   return (
-    <div class="contents">
+    <div className="contents">
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-lights">
-          <div class="container-fluid">
-            <img src="../images/icon.png" alt="icon" class="icon" />
-            <a class="navbar-brand" href="landing_page.html">
+        <nav className="navbar navbar-expand-lg navbar-light bg-lights">
+          <div className="container-fluid">
+            <img src="../images/icon.png" alt="icon" className="icon" />
+            <a className="navbar-brand" href="landing_page.html">
               TastyBox
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -19,24 +19,24 @@ function Login() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse navbar-right" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
+            <div className="collapse navbar-collapse navbar-right" id="navbarNav">
+              <ul className="navbar-nav ms-auto">
                 {/* <!-- ms-autoは右よせ --> */}
-                <li class="nav-item">
+                <li className="nav-item">
                   <a
-                    class="nav-link active"
+                    className="nav-link active"
                     aria-current="page"
                     href="landing_page.html"
                   >
                     Home
                   </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -44,27 +44,27 @@ function Login() {
                   >
                     Discovery
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Timeline
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Ingredients
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Ranking
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -72,22 +72,22 @@ function Login() {
                   >
                     MyProfile
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Refrigerator
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Shoppinglist
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -95,9 +95,9 @@ function Login() {
                   >
                     Settings
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="landing_page.html">
+                      <a className="dropdown-item" href="landing_page.html">
                         Logout
                       </a>
                     </li>
@@ -110,9 +110,9 @@ function Login() {
       </header>
 
       <main>
-        <div class="left-area">
-          <div class="left-contents">
-            <div class="welcome-text">
+        <div className="left-area">
+          <div className="left-contents">
+            <div className="welcome-text">
               <h1>Welcome to Tastybox!</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -127,27 +127,27 @@ function Login() {
                 eros. Mauris egestas luctus finibus. Donec semper varius
                 fermentum.
               </p>
-              <div class="sign_up_contents">
+              <div className="sign_up_contents">
                 <a href="#">メールアドレスでアカウント登録</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="login-area">
-          <div class="login-contents">
-            <form class="login-form" action="" method="post">
-              <div class="form-group form-components">
+        <div className="login-area">
+          <div className="login-contents">
+            <form className="login-form" action="" method="post">
+              <div className="form-group form-components">
                 <label for="exampleDropdownFormEmail1">Email address</label>
                 <input
                   type="email"
                   name="email"
                   id=""
-                  class="form-control"
+                  className="form-control"
                   placeholder="email@example.com"
                 />
               </div>
-              <div class="form-group form-components">
+              <div className="form-group form-components">
                 <label
                   for="exampleDropdownFormPassword1"
                   placeholder="Password"
@@ -159,17 +159,17 @@ function Login() {
                   type="password"
                   name="password"
                   id=""
-                  class="password-textfield"
+                  className="password-textfield"
                 />
               </div>
-              <div class="form-check">
+              <div className="form-check">
                 <input
                   type="checkbox"
-                  class="form-check-input"
+                  className="form-check-input"
                   id="dropdownCheck"
                 />
                 <label
-                  class="form-check-label form-components"
+                  className="form-check-label form-components"
                   for="dropdownCheck"
                 >
                   Remember me
@@ -177,19 +177,19 @@ function Login() {
               </div>
               <button
                 type="submit"
-                class="form-components btn btn-primary"
-                onclick="location.href='home.html'"
+                className="form-components btn btn-primary"
+                onClick="location.href='home.html'"
               >
                 Login
               </button>
             </form>
 
-            <div class="login-with-other-plattform-account">
-              <button class="login-button btn btn-primary">Google</button>
+            <div className="login-with-other-plattform-account">
+              <button className="login-button btn btn-primary">Google</button>
               <br />
-              <button class="login-button btn btn-primary">Facebook</button>
+              <button className="login-button btn btn-primary">Facebook</button>
               <br />
-              <button class="login-button btn btn-primary">Apple</button>
+              <button className="login-button btn btn-primary">Apple</button>
             </div>
           </div>
         </div>
